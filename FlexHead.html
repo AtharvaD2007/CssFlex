@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }   
+        .container {
+            display: flex;
+            flex-direction: row;
+            gap: 0.7vh;
+            padding: 1vh;
+            justify-content: space-between;
+            background-color: rgb(55, 56, 57);
+            
+            color: white;
+        }
+        .container input {
+            width:140vh;
+            margin-top: 0.5vh;
+            height: 2.5vh;
+        }
+        .logo {
+            font-size: 3.5vh;
+            font-weight: bold;
+            padding-left: 0.5vh;
+        }
+        .admin {
+            font-size: 2.5vh;
+            margin-top: 1px;
+            padding-right: 1vh;
+        }
+        .main{
+            display: flex;
+            height: 90vh;
+            
+            
+        }
+        .sidebar {
+            width: 50vh;
+            background-color: rgb(6, 12, 18);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 1vh;
+            
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 1vh 0;
+            
+        }
+        .content{
+            padding: 2vh;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(221, 224, 226);
+            
+        
+        }
+        .cards {
+            display: flex;
+            gap: 1vh;
+            margin-bottom: 2vh;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: rgb(252, 254, 255);
+            color: rgb(12, 12, 12);
+            
+            width: 50vh;
+            border-radius: 1vh;
+            text-align: center;
+        }
+        .charts {
+            display: flex;
+            gap: 2vh;
+        }
+        .chart {
+            background-color: rgb(44, 126, 167);
+            color: rgb(223, 222, 222);
+            width: 75vh;
+            border-radius: 1vh;
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(55, 56, 57);
+            color: white;
+            text-align: center;
+            padding:0.5vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+        FlexDash
+        </div>
+        <div>
+        <form>
+            <input type="text" placeholder="Search dashboard...">
+
+        </form>
+        </div>
+        <div class="admin">
+        👤Admin        
+        </div>
+
+        
+
+    </div>
+    <main class="main">
+        <div class="sidebar">
+            <a href="#">Dashboard</a>
+            <a href="#">Analytics</a>
+            <a href="#">Users</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <h3>Users</h3>
+                    <p>1,240</p>
+                </div>
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <p>Rs 2.4L</p>
+                </div>
+                <div class="card">
+                    <h3>Orders</h3>
+                    <p>320</p>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h3>Growth</h3>
+                    <p>+18%</p>
+                    
+                </div>
+                <div class="chart">
+                    <h3>Conversion</h3>
+                    <p>5.4%</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>2026 Flexbpx Dashboard -- Student Practicle Task</p>
+    </footer>
+</body>
+</html>
